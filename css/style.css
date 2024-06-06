@@ -1,0 +1,355 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8b400;
+    color: rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+
+    /* width: 100%;
+    height: 80px; */
+
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+
+
+/* new */
+nav{
+    overflow: hidden;
+  
+    padding-left: 70px;
+}
+
+
+
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+
+    /* new */
+    float: left;
+    display: block;
+
+    padding-top: 20px;
+}
+
+
+
+/* new */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+
+
+
+
+
+
+
+
+.hero {
+    height: 700px;
+    background-image: url('/assets/bg/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 50px;
+    object-fit: cover;
+    margin-left: 0;
+    width: 100%;
+}
+.hero h2 {
+    font-size: 3em;
+    margin: 0;
+}
+.hero2 {
+    background-image: url('/assets/bg/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+
+
+.hero2 h2 {
+    font-size: 3em;
+    margin: 0;
+}
+.hero3 {
+    background-image: url('/assets/bg/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+
+
+.hero3 h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    margin-top: 10px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    object-fit: cover;
+}
+
+.spancards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 180px;
+}
+.sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-bottom: 40px;
+}
+.btn1{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 11px;
+    border: none;
+    background-color: #f8b400;
+    font-weight: bold;
+}
+.btn2{
+    width: 150px;
+    height: 40px;
+    border-radius: 11px;
+    border: 2px solid #f8b400;
+    background-color: white;
+    color:  #f8b400;
+    font-weight: bold;
+}
+.btn1:hover{
+    background-color: #e0a607;   
+}
+.btn2:hover{
+    color: #e0a607;   
+}
+/* nav > ul>li>a:hover{
+    color: rgb(255, 0, 43);
+} */
+nav > ul>li>a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.kinds{
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   margin-left: 900px;
+   text-decoration: none;
+   margin-top: 0;
+   margin-bottom: 0;
+   overflow: hidden;
+   transition: transform 0.3s ease;
+}
+.kinds:hover{
+    transition: transform 0.3s ease;
+    color: rgb(181, 183, 185);
+}
+.kinds>div>li{
+    text-decoration: none;
+    margin: 0;
+}
+.circle{
+    border-radius: 100%;
+    /* background-color: #e0a607; */
+    border: 3px solid  #e7e320;
+    width: 250px;
+    height: 250px;
+}
+.circle:hover{
+    width: 255px;
+    height: 255px; 
+}
+.circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+
+
+
+/* signin form */
+/* Basic styling for the form */
+#signInForm {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 300px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color:  #f8b400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    width: 150px;
+    height: 40px;
+    border-radius: 11px;
+    color: black;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    background-color: #e0a607;
+}
+
+
+
+
+
+
+/* popup bar alert */
+
+.alert {
+    padding: 20px;
+    background-color:  #f8b400;
+    color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    z-index: 200;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }

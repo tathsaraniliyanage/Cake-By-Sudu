@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake By Sudu - Tathsarani Liyanage</title>
+    
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8b400;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e0a607;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cake Shop Payment Form</h2>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="name">Name on Card</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expMonth">Exp Month</label>
+                <input type="text" id="expMonth" name="expMonth" required>
+            </div>
+            <div class="form-group">
+                <label for="expYear">Exp Year</label>
+                <input type="text" id="expYear" name="expYear" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <button type="submit">Submit Payment</button>
+            <!-- <a href="/index.html"><button style="margin-top: 5px;">Cancel</button></a> -->
+        </form>
+    </div>
+    
+
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const cardNumber = document.getElementById('cardNumber').value;
+    const expMonth = document.getElementById('expMonth').value;
+    const expYear = document.getElementById('expYear').value;
+    const cvv = document.getElementById('cvv').value;
+
+    // Simple validation
+    if (name && cardNumber && expMonth && expYear && cvv) {
+        alert('Payment Successful');
+        // Here you can add the logic to process the payment
+    } else {
+        alert('Please fill out all fields');
+    }
+});
+
+    </script>
+</body>
+</html>
